@@ -1,0 +1,1 @@
+export const PASSWORD_REG = /^(?=.*[A-Z])(?=.*[a-z])(?=.*\d).{8,}$/g;
