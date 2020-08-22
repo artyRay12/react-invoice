@@ -5,7 +5,7 @@ import TerminalTableRow from "./TerminalTableRow/TerminalTableRow";
 export default function TerminalTable({ data, onDelete }) {
     return (
         <div className="">
-            <table className="table table-striped table-dark col-8">
+            <table className="table table-striped table-dark">
                 <thead>
                     <tr>
                         <th scope="col-1" className="terminal-name-column">
