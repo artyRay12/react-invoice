@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import { useState } from "react";
+import "./buyersFilterPanel.scss";
 
 const FilterPanel = ({ onFilterChange }) => {
     const [value, setValue] = useState("");
@@ -13,7 +14,7 @@ const FilterPanel = ({ onFilterChange }) => {
             type="text"
             value={value}
             onChange={(e) => setValue(e.target.value)}
-            className="form-control form-control-lg search-input m-right col-3"
+            className="form-control form-control search-input m-right"
             placeholder="filter by username"
         />
     );

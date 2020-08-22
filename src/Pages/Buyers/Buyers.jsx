@@ -55,9 +55,9 @@ const Buyers = () => {
     const dataForShow = !filter ? state : filteredContacts;
 
     return (
-        <div className="buyers-wrapper">
+        <div className="buyers-wrapper col-md-9 col no-gutters p-0">
             <h2 className="text-light text-center m-4">Buyers</h2>
-            <div className="d-flex col p-0 justify-content-between">
+            <div className="d-flex col p-0 justify-content-between buyers-control-panel">
                 <FilterPanel onFilterChange={onFilterChange} />
                 <SizeButtons onSizeChange={onSizeChange} />
             </div>

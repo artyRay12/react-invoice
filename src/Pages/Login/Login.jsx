@@ -7,8 +7,8 @@ import { Redirect } from "react-router-dom";
 import { data } from "../Buyers/data";
 
 const Login = () => {
-    const [username, setUsername] = useState("artyray12");
-    const [password, setPassword] = useState("ASdasd123");
+    const [username, setUsername] = useState("");
+    const [password, setPassword] = useState("");
     const [passwordValidation, setPasswordValidation] = useState(false);
     const [isSuccessfulSubmit, setIsSuccessfulSubmit] = useState(false);
     const [, dispatch] = useContext(UserContex);

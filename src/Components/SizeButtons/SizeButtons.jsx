@@ -4,7 +4,7 @@ export default function SizeButtons({ onSizeChange }) {
     return (
         <div className="m-left">
             <div
-                className="btn-group btn-group-lg"
+                className="btn-group btn-group"
                 role="group"
                 aria-label="Basic example"
             >
