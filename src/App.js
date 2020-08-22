@@ -16,6 +16,7 @@ function App() {
                 <SideBar />
                 <div className="offset-2 offset-sm-1 col mt-5">
                     <Switch>
+                        <Route path="/" exact />
                         <Route path="/login/" component={Login} />
                         <Route path="/terminals/" component={Terminal} />
                         <Route path="/buyers/" component={Buyers} exact />
