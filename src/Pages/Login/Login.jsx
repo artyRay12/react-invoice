@@ -16,8 +16,6 @@ const Login = () => {
         `https://api.github.com/users/${username}`
     );
 
-    console.log(data);
-
     const onSubmit = (e) => {
         e.preventDefault();
         if (!PASSWORD_REG.test(password)) {
@@ -49,7 +47,7 @@ const Login = () => {
         return <Redirect to="/" />
 
     return (
-        <div className="col mt-5">
+
             <div className="col-3 form-wrapper">
                 <h1 className="text-center text-light mb-4">Login</h1>
                 <form action="" onSubmit={onSubmit}>
@@ -93,7 +91,7 @@ const Login = () => {
                     </div>
                 </form>
             </div>
-        </div>
+
     );
 };
 

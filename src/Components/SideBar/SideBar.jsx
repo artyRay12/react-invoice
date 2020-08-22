@@ -5,7 +5,7 @@ import Avatar from "./Avatar/Avatar";
 
 const SideBar = () => {
     return (
-        <div className="col-2 col-lg-1 bg-dark vh-100 sidebar-wrapper">
+        <div className="col-2 col-sm-1 bg-dark vh-100 sidebar-wrapper">
             <Avatar />
             <Menu />
             <div className="text-light">no copyright</div>

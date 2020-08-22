@@ -3,9 +3,11 @@ import BuyersTableRow from "./BuyersTableRow/BuyersTableRow";
 import "./buyersTable.scss";
 
 export default function BuyersTable({ state, onSort }) {
+
+    
     return (
         <div className="table-responsive">
-            <table className="table table-striped table-dark col-8 mt-3">
+            <table className="table table-striped table-dark mt-3">
                 <thead>
                     <tr>
                         <th

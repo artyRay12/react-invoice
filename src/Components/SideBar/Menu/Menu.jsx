@@ -13,12 +13,12 @@ export default function Menu() {
             <ul className="navbar-nav flex-column">
                 <li className="nav-item">
                     <Link className="nav-link" to="/terminals/">
-                        {width < 500 ? <TerminalIcon />  : "Terminals"}
+                        {width < 1000 ? <TerminalIcon />  : "Terminals"}
                     </Link>
                 </li>
                 <li className="nav-item">
                     <Link className="nav-link" to="/buyers/">
-                    {width < 500 ? <BuyersIcon />  : "Clients"}  
+                    {width < 1000 ? <BuyersIcon />  : "Clients"}  
                     </Link>
                 </li>
             </ul>

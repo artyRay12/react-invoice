@@ -22,7 +22,7 @@ export default function Terminal() {
     };
 
     return (
-        <div className="offset-1 mt-4 col">
+        <div>
             <h2 className="text-light text-center">Terminal</h2>
             <TerminalAddForm addNew={addNew} />
             <TerminalTable data={state} onDelete={onDelete}/>
