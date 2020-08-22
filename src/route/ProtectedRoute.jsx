@@ -7,7 +7,7 @@ import { UserContex } from "../Context/userContext";
 export const ProtectedRoute = (props) => {
     const [state] = useContext(UserContex);
 
-    if (state.username) {
+    if (state.avatarUrl) {
         return <Route {...props} />;
     } else {
         return <Redirect to="/login/" />;

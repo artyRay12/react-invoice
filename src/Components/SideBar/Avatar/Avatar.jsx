@@ -4,8 +4,13 @@ import { Link } from "react-router-dom";
 import "./avatar.scss";
 
 const Avatar = () => {
-    const [state] = useContext(UserContex);
-    console.log("avatar render");
+    const [state, dipatch] = useContext(UserContex);
+
+    const onLogoutClick = () => {
+        dipatch({type: 'LOGOUT'})
+        localStorage.clear("username");
+        localStorage.clear("avatarUrl");
+    };
 
     return (
         <div className="avatar-wrapper">
@@ -18,11 +23,21 @@ const Avatar = () => {
                     </div>
                 </div>
             ) : (
-                <img
-                    src={state.avatarUrl}
-                    alt={state.username}
-                    className="avatar-img"
-                />
+                <>
+                    <img
+                        src={state.avatarUrl}
+                        alt={state.username}
+                        className="avatar-img mb-2"
+                    />
+                    <button
+                        type="button"
+                        className="btn btn-outline-info btn-sm"
+                        onClick={onLogoutClick}
+                    >
+                        {" "}
+                        out{" "}
+                    </button>
+                </>
             )}
         </div>
     );

@@ -1,17 +1,23 @@
 import React, { createContext, useReducer } from "react";
 
 const initialState = {
-    username: null,
-    avatarUrl: null,
+    avatarUrl: localStorage.getItem("avatarUrl"),
+    userName: localStorage.getItem("username"),
 };
 
 const reducer = (state = initialState, action) => {
     switch (action.type) {
-        case 'SET_USER':
+        case "SET_USER":
             return {
                 ...state,
                 username: action.payload.username,
                 avatarUrl: action.payload.avatarUrl,
+            };
+        case "LOGOUT":
+            return {
+                ...state,
+                username: "",
+                avatarUrl: "",
             };
         default:
             return {

@@ -15,11 +15,9 @@ const useFetch = (url) => {
 
         Axios.get(url)
             .then((res) => {
-                console.log(res)
                 setResponse(res.data);
             })
             .catch(({message}) => {
-                console.log(message)
                 setError(message);
             }).finally(() => {
                 setIsLoading(false)
