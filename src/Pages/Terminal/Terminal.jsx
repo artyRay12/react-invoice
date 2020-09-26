@@ -25,7 +25,7 @@ export default function Terminal() {
         <div className="col-md-9 col no-gutters p-0 m-auto">
             <h2 className="text-light text-center">Terminal</h2>
             <TerminalAddForm addNew={addNew} />
-            <TerminalTable data={state} onDelete={onDelete}/>
+            <TerminalTable data={state} onDelete={onDelete} />
         </div>
     );
 }

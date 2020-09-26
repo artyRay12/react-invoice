@@ -7,7 +7,7 @@ const Avatar = () => {
     const [state, dipatch] = useContext(UserContex);
 
     const onLogoutClick = () => {
-        dipatch({type: 'LOGOUT'})
+        dipatch({ type: "LOGOUT" });
         localStorage.clear("username");
         localStorage.clear("avatarUrl");
     };

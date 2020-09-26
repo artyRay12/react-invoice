@@ -14,9 +14,10 @@ export default function TerminalTable({ data, onDelete }) {
                         <th scope="col" className="terminal-name-column">
                             Описание терминала
                         </th>
-                        <th scope="col" className="terminal-name-column-btn">
-                            
-                        </th>
+                        <th
+                            scope="col"
+                            className="terminal-name-column-btn"
+                        ></th>
                     </tr>
                 </thead>
                 <tbody>

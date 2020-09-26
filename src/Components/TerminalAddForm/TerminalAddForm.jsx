@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import './terminalAddForm.scss'
+import "./terminalAddForm.scss";
 
-const TerminalAddForm = ({addNew}) => {
+const TerminalAddForm = ({ addNew }) => {
     const [terminalName, setTerminalName] = useState("");
     const [termianDesc, setTermianDesc] = useState("");
 
@@ -10,7 +10,7 @@ const TerminalAddForm = ({addNew}) => {
         addNew(terminalName, termianDesc);
         setTerminalName("");
         setTermianDesc("");
-    }
+    };
 
     return (
         <div className="terminal-add-form-wrapper">
@@ -18,7 +18,7 @@ const TerminalAddForm = ({addNew}) => {
                 <fieldset className="form-group terminal-name-wrapper">
                     <input
                         type="text"
-                        className='form-control '
+                        className="form-control "
                         placeholder="terminal name"
                         value={terminalName}
                         onChange={(e) => setTerminalName(e.target.value)}
@@ -28,7 +28,7 @@ const TerminalAddForm = ({addNew}) => {
                 <fieldset className="form-group terminal-name-wrapper">
                     <input
                         type="text"
-                        className='form-control'
+                        className="form-control"
                         autoComplete="current-pass"
                         placeholder="terminal description"
                         value={termianDesc}
